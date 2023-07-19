@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Heder section-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
@@ -58,8 +58,18 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!--Main block-->
     <main class="main">
       <!--Hero section-->
@@ -77,11 +87,11 @@
           <h2 class="visually-hidden">features</h2>
           <ul class="description-list list">
             <li class="description-list-item">
-              <!-- <div class="svg-icon">
+              <div class="svg-icon">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="description-title">Strategy</h3>
               <p class="description-item">
                 Our goal is to identify the business problem to walk away with
@@ -89,11 +99,11 @@
               </p>
             </li>
             <li class="description-list-item">
-              <!-- <div class="svg-icon">
+              <div class="svg-icon">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="description-title">Punctuality</h3>
               <p class="description-item">
                 Bring the key message to the brand's audience for the best price
@@ -101,11 +111,11 @@
               </p>
             </li>
             <li class="description-list-item">
-              <!-- <div class="svg-icon">
+              <div class="svg-icon">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="description-title">Diligence</h3>
               <p class="description-item">
                 Research and confirm brands that present the strongest digital
@@ -113,11 +123,11 @@
               </p>
             </li>
             <li class="description-list-item">
-              <!-- <div class="svg-icon">
+              <div class="svg-icon">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="description-title">Technologies</h3>
               <p class="description-item">
                 Design practice focused on digital experiences. We bring forth a
@@ -611,6 +621,102 @@
         </form>
       </div>
     </div> -->
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle-close js-close-menu" type="button">
+        <svg class="mobile-menu-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="" class="link mobile-menu-link"
+            ><span class="mobile-menu-studio">Studio</span></a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <address class="mobile-address">
+        <ul class="mobile-address-list list">
+          <li>
+            <a
+              class="mobile-address-link mobile-address-link-phone link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobiler-address-link mobile-address-link-email link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="mobile-networks">
+        <ul class="mobile-networks-list">
+          <li class="mobile-networks-list-item">
+            <a
+              class="mobile-networks-link"
+              href="https://www.instagram.com"
+              aria-label="instagram"
+            >
+              <svg class="mobile-networks-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-networks-list-item">
+            <a
+              class="mobile-networks-link"
+              href="https://www.twitter.com"
+              aria-label="twitter"
+            >
+              <svg class="mobile-networks" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-networks-list-item">
+            <a
+              class="mobile-networks-link"
+              href="https://www.facebook.com"
+              aria-label="facebook"
+            >
+              <svg class="mobile-networks-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-networks-list-item">
+            <a
+              class="mobile-networks-link"
+              href="https://www.linkedin.com"
+              aria-label="linkedin"
+            >
+              <svg class="mobile-networks-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
