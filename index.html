@@ -73,14 +73,14 @@
     <!--Main block-->
     <main class="main">
       <!--Hero section-->
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container-hero container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!--Section1-->
       <section class="section description">
         <div class="container">
@@ -138,36 +138,64 @@
         </div>
       </section>
       <!--Section2-->
-      <!-- <section class="whatdoing">
+      <section class="whatdoing">
         <div class="container">
           <h2 class="what-title-item">What are we doing</h2>
           <ul class="whatdoing-list list">
             <li class="whatdoing-list-item">
-              <img src="./images/section2/im1.jpg" alt="Computer" width="360" />
-            </li>
-            <li class="whatdoing-list-item">
-              <img src="./images/section2/im2.jpg" alt="Phone" width="360" />
+              <img
+                srcset="
+                  ./images/section2/im1.jpg    1x,
+                  ./images/section2/im1@2x.jpg 2x
+                "
+                src="./images/section2/im1.jpg"
+                alt="Computer"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="whatdoing-list-item">
               <img
+                srcset="
+                  ./images/section2/im2.jpg    1x,
+                  ./images/section2/im2@2x.jpg 2x
+                "
+                src="./images/section2/im2.jpg"
+                alt="Phone"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li class="whatdoing-list-item">
+              <img
+                srcset="
+                  ./images/section2/im3.jpg    1x,
+                  ./images/section2/im3@2x.jpg 2x
+                "
                 src="./images/section2/im3.jpg"
                 alt="Computer and phone"
                 width="360"
+                height="300"
               />
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Section3-->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container-team container">
           <h2 class="team-title-item">Our Team</h2>
           <ul class="list people">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/section3/im4.jpg    1x,
+                  ./images/section3/im4@2x.jpg 2x
+                "
                 src="./images/section3/im4.jpg"
                 alt="Product Designer"
                 width="264"
+                height="260"
               />
               <div class="ourteam-container">
                 <h3 class="team-title">Mark Guerrero</h3>
@@ -222,9 +250,14 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/section3/im5.jpg    1x,
+                  ./images/section3/im5@2x.jpg 2x
+                "
                 src="./images/section3/im5.jpg"
                 alt="Frontend Developer"
                 width="264"
+                height="260"
               />
               <div class="ourteam-container">
                 <h3 class="team-title">Tom Ford</h3>
@@ -279,9 +312,14 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/section3/im6.jpg    1x,
+                  ./images/section3/im6@2x.jpg 2x
+                "
                 src="./images/section3/im6.jpg"
                 alt="Marketing"
                 width="264"
+                height="260"
               />
               <div class="ourteam-container">
                 <h3 class="team-title">Camila Garcia</h3>
@@ -336,9 +374,14 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/section3/im7.jpg    1x,
+                  ./images/section3/im7@2x.jpg 2x
+                "
                 src="./images/section3/im7.jpg"
                 alt="Marketing"
                 width="264"
+                height="260"
               />
               <div class="ourteam-container">
                 <h3 class="team-title">Daniel Wilson</h3>
@@ -393,9 +436,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Clients -->
-      <!-- <section class="clients-section section">
+      <section class="clients-section section">
         <div class="container">
           <h2 class="clients-title">Customers</h2>
           <ul class="clients-list">
@@ -443,10 +486,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--Footer section-->
-    <!-- <footer class="section footer">
+    <footer class="section footer">
       <div class="footer-container container">
         <div class="footer-logo-list">
           <a class="footer-logo link" href="./index.html"
@@ -526,7 +569,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
