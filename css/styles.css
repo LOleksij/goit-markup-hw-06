@@ -170,11 +170,11 @@ button {
 .address {
   font-style: normal;
 }
-.heder-address-list {
+/* .heder-address-list {
   display: flex;
   align-items: center;
   gap: 40px;
-}
+} */
 @media only screen and (max-width: 767px) {
   .heder-address-list {
     display: none;
@@ -182,7 +182,7 @@ button {
 }
 
 .header-address-link {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -223,7 +223,7 @@ button {
   .heder-address-list {
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 12px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -255,7 +255,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -328,6 +328,11 @@ button {
     }
   }
 }
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+  }
+}
 .hero-title {
   max-width: 496px;
   font-weight: 700;
@@ -336,6 +341,17 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-title {
+    width: 320px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
 }
 .hero-btn {
   padding: 0;
@@ -486,11 +502,10 @@ button {
   width: calc((100% - 48px) / 3);
 }
 /* Team styles  */
-.people {
-  display: flex;
-  gap: 24px;
+.team {
 }
-@media only screen and (min-width: 320px) {
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .people {
     display: flex;
     flex-direction: column;
@@ -501,13 +516,12 @@ button {
 @media only screen and (min-width: 768px) {
   .people {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
     row-gap: 64px;
-    margin-right: 108px;
-    margin-left: 108px;
-    padding-bottom: 96px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -517,14 +531,19 @@ button {
     flex-wrap: wrap;
     gap: 24px;
     margin: 0 auto;
-    padding-bottom: 120px;
   }
 }
-.container-team {
-}
 .team {
-  padding: 120px 0;
   background: #f4f4fd;
+}
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
+  .container-team {
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+  }
 }
 .team-title {
   margin-bottom: 8px;
@@ -556,8 +575,11 @@ button {
   color: #434455;
   background-color: #ffffff;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .team-item {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -566,17 +588,19 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .team-item {
-    border-radius: 0px 0px 4px 4px;
+    max-width: 264px;
     flex-basis: calc((100% - 24px) / 2);
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .team-item {
-    border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -617,7 +641,7 @@ button {
   fill: #f4f4fd;
 }
 /* Footer styles */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     text-align: center;
   }
@@ -682,11 +706,21 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-list {
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .media-container {
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .media-container {
     margin-bottom: 72px;
   }
 }
@@ -719,7 +753,6 @@ button {
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-bottom: 72px;
   }
 }
 .media-icon {
@@ -947,6 +980,13 @@ button {
   padding-bottom: 120px;
   margin: 0 auto;
 }
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
+  .clients-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
 .clients-list {
   display: flex;
   justify-content: center;
@@ -959,7 +999,7 @@ button {
     justify-content: center;
     column-gap: 16px;
     row-gap: 72px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -969,7 +1009,7 @@ button {
     justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1248,8 +1288,8 @@ button {
 
 /* Mobile menu */
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1342,6 +1382,15 @@ button {
   display: flex;
   gap: 56px;
 }
+@media only screen and (min-width: 320px) and (max-width: 427px) {
+  .mobile-networks-list {
+    display: flex;
+    gap: 24px;
+  }
+  .mobile-address-link-phone {
+    font-size: 24px;
+  }
+}
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -1372,7 +1421,7 @@ button {
   right: 24px;
   border-radius: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: var(--cornflower, #e7e9fc);
+  /* background: var(--cornflower, #e7e9fc); */
   display: flex;
   align-items: center;
   justify-content: center;
