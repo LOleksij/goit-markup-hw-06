@@ -503,6 +503,7 @@ button {
 }
 /* Team styles  */
 .team {
+  padding-top: 96px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -646,11 +647,12 @@ button {
     text-align: center;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+    width: 552px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -664,9 +666,9 @@ button {
   padding-bottom: 100px;
   background-color: #2e2f42;
 }
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer {
-    padding: 0 108px;
+    /* padding: 0 108px; */
     padding-top: 98px;
     padding-bottom: 96px;
   }
@@ -829,7 +831,7 @@ button {
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .subscribe-btn {
-    margin-top: 16px;
+    /* margin-top: 16px; */
   }
 }
 .subscribe-form-input::placeholder {
